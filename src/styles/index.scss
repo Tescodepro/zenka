@@ -1,0 +1,50 @@
+@import '~bootstrap/scss/bootstrap';
+@import "swiper/css/bundle";
+@import "~slick-carousel/slick/slick.css"; 
+// @import 'node_modules/react-modal-video/scss/modal-video.scss';
+// @import 'react-image-lightbox/style.css';
+@import '@assets/scss/main.scss';
+@import 'load.scss';
+
+
+body > .skiptranslate {
+    display: none;
+  }
+  
+  #google_translate_element {
+    display: none;
+  }
+  
+  .goog-te-banner-frame.skiptranslate {
+    display: none !important;
+  }
+  
+  body {
+    top: 0px !important;
+  }
+  
+  @media print {
+    #google_translate_element {
+      display: none;
+    }
+  }
+
+  $background-color_1: #f9f9f9;
+
+  .app {
+    text-align: center;
+    padding: 20px;
+  }
+  .two-column-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    li {
+      flex: 0 0 calc(50% - 10px);
+      margin: 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: $background-color_1;
+    }
+  }
